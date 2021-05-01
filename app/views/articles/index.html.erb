@@ -5,9 +5,8 @@
 <div id="container">
   <ul>
     <% @articles.each do |article| %>
-      <li>
-        <%= link_to article.title, article_path(article.id) %>
-        <%= article.content %>
+        <h2><%= link_to article.title, article_path(article.id) %></h2>
+        <p><%= article.content %></p>
       </li>
     <% end %>
   </ul>
